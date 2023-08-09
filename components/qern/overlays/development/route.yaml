@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: qern
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: qern
+    app.kubernetes.io/part-of: byoc-app-spbq
+  name: qern4eue
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: qern
+    weight: null
+status: {}
