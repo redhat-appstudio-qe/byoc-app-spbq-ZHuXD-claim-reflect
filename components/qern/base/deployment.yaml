@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: qern
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-gzls-tenant/byoc-app-spbq/qern@sha256:9174e526348a9d61cd67a03760ef04d3e0f120313a3f1387c7b3c2c13d9acf44
         name: my-java-quarkus
         ports:
         - containerPort: 8081
